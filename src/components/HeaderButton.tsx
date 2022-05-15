@@ -1,7 +1,7 @@
 import {Link, NavLink} from "react-router-dom"
 import React, {useState} from 'react';
 import {State} from "history";
-// import "./css/header_button.scss" 
+import { Colors } from "../consts";
 
 type AppProps = {
   message: string;
@@ -9,14 +9,14 @@ type AppProps = {
 }; /* use `interface` if exporting so that consumers can extend */
 
 const activeStyle = {
-  color: 'red',
-  padding: '10px',
+  color: Colors.springBud,
+  padding: '10px 20px 0px 20px',
   'text-decoration': 'none',
 }
 
 const linkStyle = {
-  color: '#F3EFF5',
-  padding: '10px',
+  color: Colors.stateGray,
+  padding: '10px 20px 0px 20px',
   'text-decoration': 'none',
 }
 

@@ -11,14 +11,15 @@ import reportWebVitals from './reportWebVitals';
 import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Header from './components/Header'
+import Home from './pages/Home';
 
 ReactDOM.render(
   <BrowserRouter>
     <Header />
     <Routes>
-      <Route path="/" element={<App />} />
-      <Route path="about" element={<About />} />
+      <Route path="/" element={<Home />} />
       <Route path="reviews" element={<Reviews />} />
+      <Route path="about" element={<About />} />
     </Routes>
     <React.StrictMode>
     </React.StrictMode>

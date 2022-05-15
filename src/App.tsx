@@ -27,7 +27,6 @@ export default function App() {
 //      </nav>
 //    </div>
   <div>
-    <Header />
     <Wip/>
   </div>
   );
