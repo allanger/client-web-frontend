@@ -7,6 +7,6 @@ steps:
   image: plugins/docker
   settings:
     repo: reg.badhouseplants.net/client-web-frontend
-    tags: latest
+    tags: latest main
 
 
