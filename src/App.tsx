@@ -28,6 +28,7 @@ export default function App() {
 //    </div>
   <div>
     <Wip/>
+    <p>Check if it's updated</p>
   </div>
   );
 }
