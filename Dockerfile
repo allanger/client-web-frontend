@@ -8,5 +8,5 @@ COPY ./ /app/
 RUN yarn build
 
 FROM nginx:1.21.6
-COPY --from=builder /app/build/ /static
-COPY ./configs/nginx.conf /etc/nginx/sites-available/default
+COPY --from=builder /app/build/ /usr/share/nginx/html
+COPY ./configs/nginx.conf /etc/nginx/conf.d/default.conf
