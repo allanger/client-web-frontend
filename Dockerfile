@@ -9,4 +9,4 @@ RUN yarn build
 
 FROM nginx:1.21.6
 COPY --from=builder /app/build/ /static
-COPY ./configs/nginx.conf /etc/nginx/nginx.conf
+COPY ./configs/nginx.conf cd /etc/nginx/sites-available/default
