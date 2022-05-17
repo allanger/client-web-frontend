@@ -1,11 +1,30 @@
-const mainStyle = {
-    
+import PageBody from '../components/PageBody';
+import { Colors } from '../consts';
+
+const style = {
+  display: 'block',
+  // justifyContent: 'center',
+  color: Colors.springBud,
 }
 
-export default function Expenses() {
+const contentStyle = {
+  justifyContent: 'center',
+  display: 'flex'
+}
+
+const content = (
+  <div style={style}>
+    <h1 style={contentStyle}>Bad Houseplants</h1>
+    <p style={contentStyle}>-sound-music-production-mixing-</p>
+    <br/>
+    <p style={contentStyle}>
+      
+    </p>
+  </div>
+)
+
+export default function Home() {
   return (
-    <main style={{ padding: "1rem 0" }}>
-      <h2>asd</h2>
-    </main>
+    <PageBody content={content} />
   );
 }
