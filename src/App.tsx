@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import HeaderButton from "./components/HeaderButton";
 import Header from "./components/Header";
 import Wip from "./components/WIP";
+import { Helmet } from 'react-helmet';
 
 export default function App() {
   return (
@@ -27,6 +28,11 @@ export default function App() {
 //      </nav>
 //    </div>
   <div>
+    <Helmet>
+      <title>App Title</title>
+      <meta name="description" content="App Description" />
+      <meta name="theme-color" content="#008f68" />
+    </Helmet>
     <Wip/>
     <p>Check if it's updated</p>
   </div>
