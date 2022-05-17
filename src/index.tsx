@@ -13,8 +13,32 @@ import Reviews from './pages/Reviews';
 import Header from './components/Header'
 import Home from './pages/Home';
 
+const warnStyle = {
+  color: 'red',
+  margin: '10px 10% 10px 10%',
+  display: 'flex',
+  justifyContent: 'center',
+  fontSize: '20px',
+  alignItems: 'center',
+}
+
+const linkStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  fontSize: '20px',
+  alignItems: 'center',
+}
+
 ReactDOM.render(
   <BrowserRouter>
+    <div style={warnStyle}>
+      I know it look ugly but
+      this site is under development!
+      <br/>
+      If you want me to mix your track or use my beats, feel free to reach me.
+      <br/>
+    </div>
+    <a style={linkStyle} href = "mailto: allanger@badhouseplants.net">Send Email</a>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
