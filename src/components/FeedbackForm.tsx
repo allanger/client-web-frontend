@@ -10,8 +10,16 @@ const style = {
   justifyContent: 'center',
 }
 
+function handleClick() {
+  
+}
+
 const FeedbackForm = () =>
   <div style={style}>
+    <>
+      <button onClick={this.handleClick}>Say something</button>
+      <Child message={this.state.mssg} />
+    </>
     <form>
       <label>
         Your Email:
