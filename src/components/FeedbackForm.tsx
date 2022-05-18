@@ -7,6 +7,8 @@ const style = {
   height: '50px',
   padding: '5px',
   margin: '10px 10% 10px 10%',
+  flexGrow : 1, 
+  justifyContent : 'center'
 }
 
 enum Services {
