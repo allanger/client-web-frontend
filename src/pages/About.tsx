@@ -4,7 +4,6 @@ import { Colors } from '../consts';
 
 const style = {
   display: 'block',
-  // justifyContent: 'center',
   color: Colors.springBud,
 }
 
@@ -23,9 +22,18 @@ const content = (
     <h1 style={contentStyle}>Bad Houseplants</h1>
     <p style={contentStyle}>-sound-music-production-mixing-</p>
     <br/>
-    <p style={contentStyle}>
-      
-    </p>
+    <p style={contentStyle}/>
+    <form>
+      <label>
+        Your Email:
+        <input type="text" name="email" />
+      </label>
+      <label>
+        Your Name:
+        <input type="text" name="name" />
+      </label>
+      <input type="submit" value="Submit  " />
+    </form>   
   </div>
 )
 
