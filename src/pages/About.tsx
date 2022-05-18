@@ -1,6 +1,7 @@
 import {Helmet} from 'react-helmet';
 import PageBody from '../components/PageBody';
 import { Colors } from '../consts';
+import FeedbackForm from '../components/FeedbackForm';
 
 const style = {
   display: 'block',
@@ -23,17 +24,7 @@ const content = (
     <p style={contentStyle}>-sound-music-production-mixing-</p>
     <br/>
     <p style={contentStyle}/>
-    <form>
-      <label>
-        Your Email:
-        <input type="text" name="email" />
-      </label>
-      <label>
-        Your Name:
-        <input type="text" name="name" />
-      </label>
-      <input type="submit" value="Submit  " />
-    </form>   
+    <FeedbackForm/>
   </div>
 )
 
