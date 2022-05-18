@@ -1,9 +1,6 @@
 kind: pipeline
 name: default
 type: kubernetes
-when:
-  branch:
-    - main
 
 steps:
 - name: docker  
@@ -12,4 +9,7 @@ steps:
     repo: reg.badhouseplants.net/client-web-frontend
     tags: 
       - latest 
+      - main
+  when:
+    branch:
       - main
