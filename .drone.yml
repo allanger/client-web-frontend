@@ -10,5 +10,6 @@ steps:
     tags: 
       - latest 
       - main
-
-
+  when:
+    branch:
+      - main
