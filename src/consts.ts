@@ -4,4 +4,13 @@ export const Colors = {
   springBud: "#DBDFAC",
   stateGray: "#5F758E",
   spaceCadet: "#383961",
+  aureolin: "#FCEF32ff",
+  raisinBlack: "#211C21ff",
+  white: "#FEFEFEff",
+  cinnabar: "#E44238ff",
+  black: "#010101ff",
+  silver: "#C3C3C3ff",
+  aqua: "#12FFF9ff",
+  fluorescentBlue: "#12FCF6ff",
+  oldLavender: "#786C74ff",
 }

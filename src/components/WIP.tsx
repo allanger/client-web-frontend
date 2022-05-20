@@ -1,25 +1,21 @@
+import {Colors} from "../consts";
+
 const text = "I am currently working on it, mate"
 
+const panelStyle = {
+  backgroundColor: Colors.appleRed,
+  width: '100%',
+  height: '60px',
+}
+
 const linkStyle = {
-  color: 'cyan',
-  height: 'auto',
-  width: 'auto',
-  'text-align': 'center',
-  'justify-content': 'center',
-  display: 'flex',
+  color:  Colors.white,
+  fontSize: "20px",
 }
 
 const Wip = () => 
-  <div style={ linkStyle }>
-    <p>
-    Oi! 
-    </p>
-    <p>
-    I am allanger and I'm currently working on this page.
-    </p>
-
-    
-    
+  <div style={ panelStyle }>
+    <p style={linkStyle}>This site is under development</p>
   </div>
 
 export default Wip;

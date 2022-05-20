@@ -6,13 +6,12 @@ import {
   Route,
 } from "react-router-dom";
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import About from './pages/About';
 import Reviews from './pages/Reviews';
 import Header from './components/Header'
 import Home from './pages/Home';
-
+import WIP from './components/WIP';
 const warnStyle = {
   color: 'red',
   margin: '10px 10% 10px 10%',
@@ -31,6 +30,7 @@ const linkStyle = {
 
 ReactDOM.render(
   <BrowserRouter>
+    <WIP/>
     <div style={warnStyle}>
       I know it look ugly but
       this site is under development!
