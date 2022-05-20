@@ -31,14 +31,6 @@ const linkStyle = {
 ReactDOM.render(
   <BrowserRouter>
     <WIP/>
-    <div style={warnStyle}>
-      I know it look ugly but
-      this site is under development!
-      <br/>
-      If you want me to mix your track or use my beats, feel free to reach me.
-      <br/>
-    </div>
-    <a style={linkStyle} href = "mailto: allanger@badhouseplants.net">Send Email</a>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
