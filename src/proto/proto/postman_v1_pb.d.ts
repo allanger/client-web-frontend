@@ -10,8 +10,11 @@ export class Email extends jspb.Message {
   getSendername(): string;
   setSendername(value: string): Email;
 
-  getMessage(): string;
-  setMessage(value: string): Email;
+  getSubject(): string;
+  setSubject(value: string): Email;
+
+  getMessageMap(): jspb.Map<string, string>;
+  clearMessageMap(): Email;
 
   serializeBinary(): Uint8Array;
   toObject(includeInstance?: boolean): Email.AsObject;
@@ -25,7 +28,8 @@ export namespace Email {
   export type AsObject = {
     senderemail: string,
     sendername: string,
-    message: string,
+    subject: string,
+    messageMap: Array<[string, string]>,
   }
 }
 

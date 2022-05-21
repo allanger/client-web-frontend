@@ -1,7 +1,7 @@
 import "./css/header.css"
-import {Colors} from "../consts"
-import React, {useState} from "react";
-
+import { Colors } from "../consts"
+import React, { useState } from "react";
+import { Email } from '../proto/proto/postman_v1_pb'
 const style = {
   backgroundColor: Colors.darkPurple,
   padding: '5px',
@@ -10,6 +10,10 @@ const style = {
   justifyContent: 'center'
 }
 
+
+const request = {
+
+}
 enum Services {
   Mixing,
   Beat,
@@ -37,19 +41,19 @@ function FeedbackForm() {
           <label>
             Your Email:
           </label>
-            <input type="text" name="email" />
+          <input type="text" name="email" />
         </div>
         <div>
           <label>
             Your Name:
           </label>
-            <input type="text" name="name" />
+          <input type="text" name="name" />
         </div>
         <div>
           <label>
             Text:
           </label>
-            <input type="text" name="name" />
+          <input type="text" name="name" />
         </div>
         <input type="submit" value="Submit  " />
       </form>

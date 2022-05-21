@@ -13,7 +13,13 @@
 
 var jspb = require('google-protobuf');
 var goog = jspb;
-var global = (function() { return this || window || global || self || Function('return this')(); }).call(null);
+var global = (function() {
+  if (this) { return this; }
+  if (typeof window !== 'undefined') { return window; }
+  if (typeof global !== 'undefined') { return global; }
+  if (typeof self !== 'undefined') { return self; }
+  return Function('return this')();
+}.call(null));
 
 var google_protobuf_empty_pb = require('google-protobuf/google/protobuf/empty_pb.js');
 goog.object.extend(proto, google_protobuf_empty_pb);
@@ -73,7 +79,8 @@ proto.postman.Email.toObject = function(includeInstance, msg) {
   var f, obj = {
     senderemail: jspb.Message.getFieldWithDefault(msg, 1, ""),
     sendername: jspb.Message.getFieldWithDefault(msg, 2, ""),
-    message: jspb.Message.getFieldWithDefault(msg, 3, "")
+    subject: jspb.Message.getFieldWithDefault(msg, 3, ""),
+    messageMap: (f = msg.getMessageMap()) ? f.toObject(includeInstance, undefined) : []
   };
 
   if (includeInstance) {
@@ -120,7 +127,13 @@ proto.postman.Email.deserializeBinaryFromReader = function(msg, reader) {
       break;
     case 3:
       var value = /** @type {string} */ (reader.readString());
-      msg.setMessage(value);
+      msg.setSubject(value);
+      break;
+    case 4:
+      var value = msg.getMessageMap();
+      reader.readMessage(value, function(message, reader) {
+        jspb.Map.deserializeBinary(message, reader, jspb.BinaryReader.prototype.readString, jspb.BinaryReader.prototype.readString, null, "", "");
+         });
       break;
     default:
       reader.skipField();
@@ -165,12 +178,16 @@ proto.postman.Email.serializeBinaryToWriter = function(message, writer) {
       f
     );
   }
-  f = message.getMessage();
+  f = message.getSubject();
   if (f.length > 0) {
     writer.writeString(
       3,
       f
     );
+  }
+  f = message.getMessageMap(true);
+  if (f && f.getLength() > 0) {
+    f.serializeBinary(4, writer, jspb.BinaryWriter.prototype.writeString, jspb.BinaryWriter.prototype.writeString);
   }
 };
 
@@ -212,10 +229,10 @@ proto.postman.Email.prototype.setSendername = function(value) {
 
 
 /**
- * optional string Message = 3;
+ * optional string Subject = 3;
  * @return {string}
  */
-proto.postman.Email.prototype.getMessage = function() {
+proto.postman.Email.prototype.getSubject = function() {
   return /** @type {string} */ (jspb.Message.getFieldWithDefault(this, 3, ""));
 };
 
@@ -224,9 +241,31 @@ proto.postman.Email.prototype.getMessage = function() {
  * @param {string} value
  * @return {!proto.postman.Email} returns this
  */
-proto.postman.Email.prototype.setMessage = function(value) {
+proto.postman.Email.prototype.setSubject = function(value) {
   return jspb.Message.setProto3StringField(this, 3, value);
 };
+
+
+/**
+ * map<string, string> Message = 4;
+ * @param {boolean=} opt_noLazyCreate Do not create the map if
+ * empty, instead returning `undefined`
+ * @return {!jspb.Map<string,string>}
+ */
+proto.postman.Email.prototype.getMessageMap = function(opt_noLazyCreate) {
+  return /** @type {!jspb.Map<string,string>} */ (
+      jspb.Message.getMapField(this, 4, opt_noLazyCreate,
+      null));
+};
+
+
+/**
+ * Clears values from the map. The map will be non-null.
+ * @return {!proto.postman.Email} returns this
+ */
+proto.postman.Email.prototype.clearMessageMap = function() {
+  this.getMessageMap().clear();
+  return this;};
 
 
 goog.object.extend(exports, proto.postman);
