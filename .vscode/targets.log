@@ -1,208 +1,263 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-# GNU Make 3.81
-# Copyright (C) 2006  Free Software Foundation, Inc.
-# This is free software; see the source for copying conditions.
-# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
-# PARTICULAR PURPOSE.
+make: *** No rule to make target 'all'.  Stop.
 
-# This program built for i386-apple-darwin11.3.0
- 
-make: *** No rule to make target `all'.  Stop.
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
 
-
-# Make data base, printed on Sat May 21 13:37:02 2022
+# Make data base, printed on Fri Jun  3 16:17:11 2022
 
 # Variables
 
-# automatic
-<D = $(patsubst %/,%,$(dir $<))
-# automatic
-?F = $(notdir $?)
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LC_CTYPE = en_US.UTF-8
-# environment
- 
-VSCODE_LOG_NATIVE = false
-# automatic
-?D = $(patsubst %/,%,$(dir $?))
-# automatic
-@D = $(patsubst %/,%,$(dir $@))
-# automatic
-@F = $(notdir $@)
-# makefile
-CURDIR := /Users/allanger/Development/allanger/client-web-frontend
-# makefile
-SHELL = /bin/sh
-# environment
-VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
-# environment
-_ = /usr/bin/make
-# makefile (from `Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-__CFBundleIdentifier = com.microsoft.VSCode
-# environment
-INFOPATH = /opt/homebrew/share/info:
-# environment
-P9K_SSH = 0
-# environment
-VSCODE_IPC_HOOK_EXTHOST = /var/folders/r0/rwcr9ng11xb720wfg_bqlhrm0000gp/T/vscode-ipc-808f1d15-eac8-49a2-90c7-7fe9712ea2aa.sock
-# environment
-VSCODE_CWD = /Users/allanger/Development/allanger/client-web-frontend
-# environment
-PATH = /opt/homebrew/opt/openjdk/bin:/opt/homebrew/sbin:/opt/homebrew/opt/node@14/bin:/opt/homebrew/opt/gnu-getopt/bin:/Users/allanger/bin:/usr/local/bin:/Users/allanger/.bin:/Users/allanger/golang:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion Tech Preview.app/Contents/Public:/Library/Apple/usr/bin:/Users/allanger/.cargo/bin
-# environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-GOPATH = /Users/allanger/golang
-# environment
-VSCODE_LOG_STACK = false
-# environment
-ELECTRON_RUN_AS_NODE = 1
-# default
-.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
-# environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.EQ7Ty4YZEN/Listeners
-# automatic
-%F = $(notdir $%)
-# environment
-GOBIN = /Users/allanger/golang/bin
-# environment
-VSCODE_PIPE_LOGGING = true
-# environment
-PWD = /Users/allanger/Development/allanger/client-web-frontend
-# environment
-HOMEBREW_CELLAR = /opt/homebrew/Cellar
-# environment
-ZSH_DISABLE_COMPFIX = true
-# environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
-# environment
-MANPATH = /opt/homebrew/share/man::
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
-# environment
-HOME = /Users/allanger
-# default
-MAKEFILEPATH := /Applications/Xcode.app/Contents/Developer/Makefiles
-# environment
-VSCODE_CLI = 1
-# environment
-VSCODE_CODE_CACHE_PATH = /Users/allanger/Library/Application Support/Code/CachedData/da15b6fd3ef856477bf6f4fb29ba1b7af717770d
-# environment
-LOGNAME = allanger
-# environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
-# environment
-ZSH = /Users/allanger/.oh-my-zsh
-# environment
-VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# automatic
-^D = $(patsubst %/,%,$(dir $^))
-# environment
-XPC_FLAGS = 0x0
-# environment
-COLORTERM = truecolor
-# default
-MAKE = $(MAKE_COMMAND)
-# environment
-LC_TERMINAL = iTerm2
-# environment
-SHLVL = 3
-# environment
-CARGO_NET_GIT_FETCH_WITH_CLI = true
-# default
-MAKE_VERSION := 3.81
-# environment
-USER = allanger
-# makefile
-.DEFAULT_GOAL := protobuf
-# default
-MAKECMDGOALS := all
-# environment
-TERM_SESSION_ID = w0t0p1:CDAD4E22-6FC5-420A-9CFA-5F88E70C98E5
-# environment
-LESS = -R
-# automatic
-%D = $(patsubst %/,%,$(dir $%))
-# default
-MAKE_COMMAND := /Applications/Xcode.app/Contents/Developer/usr/bin/make
-# environment
-TERM_PROGRAM = iTerm.app
-# default
-.VARIABLES := 
-# environment
-TMPDIR = /var/folders/r0/rwcr9ng11xb720wfg_bqlhrm0000gp/T/
-# automatic
-*F = $(notdir $*)
-# environment
-VSCODE_IPC_HOOK = /Users/allanger/Library/Application Support/Code/1.67.1-main.sock
-# makefile
-MAKEFLAGS = Rrqp
-# environment
-MFLAGS = -Rrqp
-# automatic
-*D = $(patsubst %/,%,$(dir $*))
-# environment
-TERM_PROGRAM_VERSION = 3.5.0beta4
-# environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.29816130.29816136.5ECE803E-6D54-4078-AF86-2B16ACDA7064
-# environment
-LC_TERMINAL_VERSION = 3.5.0beta4
-# environment
-HOMEBREW_PREFIX = /opt/homebrew
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
-# automatic
-+F = $(notdir $+)
-# environment
-TERMINFO_DIRS = /Applications/iTerm.app/Contents/Resources/terminfo:/usr/share/terminfo
-# environment
-ITERM_SESSION_ID = w0t0p1:CDAD4E22-6FC5-420A-9CFA-5F88E70C98E5
-# environment
-HOMEBREW_REPOSITORY = /opt/homebrew
-# environment
-COLORFGBG = 0;15
-# environment
-__CF_USER_TEXT_ENCODING = 0x1F6:0x0:0x0
-# environment
-COMMAND_MODE = unix2003
-# default
-MAKEFILES := 
-# automatic
-<F = $(notdir $<)
-# environment
-ITERM_PROFILE = Default
-# environment
-EDITOR = nvim
-# environment
-PAGER = less
+GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
-P9K_TTY = old
-# automatic
-^F = $(notdir $^)
+NO_AT_BRIDGE = 1
+# environment
+GTK_RC_FILES = /etc/gtk/gtkrc:/home/allanger/.gtkrc:/home/allanger/.config/gtkrc
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-404706f9-de8c-42ae-ab17-b5f157ff76be.sock
+# environment
+LC_NAME = en_US.UTF-8
+# environment
+LC_NUMERIC = en_US.UTF-8
+# environment
+VSCODE_CWD = /home/allanger
+# environment
+RAWWAVE_PATH = /usr/share/stk/rawwaves
+# environment
+LC_ADDRESS = en_US.UTF-8
 # default
-SUFFIXES := 
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
 # environment
-MAKELEVEL := 0
+GDK_DPI_SCALE = 1
 # environment
-CLOUDSDK_HOME = /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/allanger/Development/allanger/web-frontend
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+OPCODE6DIR = /usr/lib/csound/plugins64-6.0
+# environment
+MAIL = /var/spool/mail/allanger
+# environment
+XDG_DATA_DIRS = /home/allanger/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+# environment
+OLDPWD = /home/allanger
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/allanger/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session1
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
+XAUTHORITY = /run/user/1000/xauth_IYlWEG
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
 # environment
-_P9K_TTY = /dev/ttys000
+PLASMA_USE_QT_SCALING = 1
+# makefile
+CURDIR := /home/allanger/Development/allanger/web-frontend
 # environment
-VSCODE_PID = 57443
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PAM_KWALLET5_LOGIN = /run/user/1000/kwallet5.socket
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /home/allanger/.config/kdedefaults:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XCURSOR_THEME = Vimix-cursors
+# environment
+XDG_SESSION_DESKTOP = KDE
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 11977
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/makbook:@/tmp/.ICE-unix/1375,unix/makbook:/tmp/.ICE-unix/1375
+# automatic
+*F = $(notdir $*)
+# environment
+QT_QPA_PLATFORMTHEME = qt5ct
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+FLUTTER_HOME = /opt/flutter
+# environment
+PATH = /home/allanger/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/opt/flutter/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# default
+MAKEFILES := 
+# environment
+LC_MONETARY = en_US.UTF-8
+# environment
+MOTD_SHOWN = pam
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = en_US.UTF-8
+# environment
+INVOCATION_ID = adcdfeebf193433093f19d981e1a111b
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+LC_TELEPHONE = en_US.UTF-8
+# environment
+GDK_SCALE = 1
+# automatic
+?F = $(notdir $?)
+# environment
+KDE_APPLICATIONS_AS_SCOPE = 1
+# environment
+XDG_SEAT = seat0
+# environment
+XDG_CURRENT_DESKTOP = KDE
+# automatic
++F = $(notdir $+)
+# environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
+DESKTOP_SESSION = plasmawayland
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = KDE
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = firefox
+# environment
+LOGNAME = allanger
+# environment
+CSSTRNGS = /usr/share/locale
+# environment
+XDG_VTNR = 2
+# makefile
+.DEFAULT_GOAL := protobuf
+# environment
+SYSTEMD_EXEC_PID = 5202
+# environment
+EDITOR = nano
+# environment
+DISPLAY = :1
+# environment
+USER = allanger
+# default
+MAKE_VERSION := 4.3
+# environment
+KDE_SESSION_UID = 1000
+# environment
+MANAGERPID = 1292
+# environment
+QT_WAYLAND_FORCE_DPI = 96
+# environment
+LC_MEASUREMENT = en_US.UTF-8
+# environment
+XKB_DEFAULT_LAYOUT = us
+# environment
+_ = /usr/bin/make
+# environment
+LC_PAPER = en_US.UTF-8
+# environment
+MOZ_PLUGIN_PATH = /usr/lib/mozilla/plugins
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+JOURNAL_STREAM = 8:52791
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+GTK2_RC_FILES = /etc/gtk-2.0/gtkrc:/home/allanger/.gtkrc-2.0:/home/allanger/.config/gtkrc-2.0
+# environment
+HOME = /home/allanger
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-eee0f3b6-1.67.2-main.sock
+# environment
+HG = /usr/bin/hg
+# environment
+XDG_SESSION_ID = 2
+# environment
+XCURSOR_SIZE = 24
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 0
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+KDE_SESSION_VERSION = 5
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+KDE_FULL_SESSION = true
+# environment
+LC_IDENTIFICATION = en_US.UTF-8
 # variable set hash-table stats:
-# Load=93/1024=9%, Rehash=0, Collisions=6/116=5%
+# Load=122/1024=12%, Rehash=0, Collisions=9/152=6%
 
 # Pattern-specific Variable Values
 
@@ -210,9 +265,9 @@ VSCODE_PID = 57443
 
 # Directories
 
-# . (device 16777230, inode 30054866): 26 files, no impossibilities.
+# . (device 66308, inode 3277836): 27 files, no impossibilities.
 
-# 26 files, no impossibilities in 1 directories.
+# 27 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -225,41 +280,19 @@ protobuf:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  commands to execute (from `Makefile', line 4):
-	protoc  --js_out=import_style=commonjs,binary:./src/proto \
-	--grpc-web_out=import_style=typescript,mode=grpcwebtext:./src/proto \
-	--proto_path=./proto \
-	$$(find ./proto -type f -iname "*.proto")
-	
-
-# Not a target:
-all:
-#  Command-line target.
-#  Implicit rule search has been done.
-#  File does not exist.
-#  File has not been updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
-
-.PHONY: protobuf
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
-.SUFFIXES:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 4):
+				protoc  --js_out=import_style=commonjs,binary:./src/proto \
+                --grpc-web_out=import_style=typescript,mode=grpcwebtext:./src/proto \
+                --proto_path=./proto \
+                $$(find ./proto -type f -iname "*.proto")
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 12:42:26
+ 
+#  Last modified 2022-05-18 20:18:51.038895751
 #  File has been updated.
 #  Successfully updated.
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
 
 # Not a target:
 .DEFAULT:
@@ -267,19 +300,32 @@ Makefile:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+.PHONY: protobuf
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/19=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/18=0%
 # VPATH Search Paths
 
-# No `vpath' search paths.
+# No 'vpath' search paths.
 
-# No general (`VPATH' variable) search path.
+# No general ('VPATH' variable) search path.
 
-# # of strings in strcache: 1
-# # of strcache buffers: 1
-# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
-# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+# strcache buffers: 1 (0) / strings = 34 / storage = 323 B / avg = 9 B
+# current buf: size = 8162 B / used = 323 B / count = 34 / avg = 9 B
 
-# Finished Make data base on Sat May 21 13:37:02 2022
+# strcache performance: lookups = 41 / hit rate = 17%
+# hash-table stats:
+# Load=34/8192=0%, Rehash=0, Collisions=0/41=0%
+# Finished Make data base on Fri Jun  3 16:17:11 2022
 
  

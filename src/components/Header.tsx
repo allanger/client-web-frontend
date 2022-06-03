@@ -1,21 +1,33 @@
 import "./css/header.css"
 import HeaderButton from "./HeaderButton";
-import {Colors} from "../consts"
+import { Colors } from "../consts"
+
+const rel: "sticky" = "sticky";
 
 const style = {
-  backgroundColor: Colors.darkPurple,
+  position: rel,
+  top: "0",
+  backgroundColor: Colors.raisinBlack,
   height: '50px',
-  padding: '5px',
-  margin: '10px 10% 10px 10%',
   display: 'flex',
-  justifyContent: 'center',
+  justifyContent: "center",
+  alignItems: "center", 
 }
 
-const Header = () => 
+const menuStyle = {
+  // flex: "0",
+}
+
+const linksStyle = {
+  flex: "0",
+}
+
+const Header = () =>
   <div style={style}>
-    <HeaderButton message={"Home"} link={"/"}/>
-    <HeaderButton message={"Reviews"} link={"/reviews"}/>
-    <HeaderButton message={"About"} link={"/about"}/>
+    <div style={menuStyle}>
+      <HeaderButton message={"Home"} link={"/"} />
+      <HeaderButton message={"About"} link={"/about"} />
+    </div>
   </div>
 
 export default Header;

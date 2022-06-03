@@ -30,7 +30,6 @@ const linkStyle = {
 
 ReactDOM.render(
   <BrowserRouter>
-    <WIP/>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
