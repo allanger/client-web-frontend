@@ -55,7 +55,7 @@ function FeedbackForm() {
             align='stretch'
             w="100%"
           >
-            <Text mb='5px'>Your Email:</Text>
+            <Text mb='5px' textColor={Colors.silver}>Your Email:</Text>
             <InputGroup size='md'>
               <Input placeholder='Your Email' value={email} onChange={e => setEmail(e.target.value)} borderColor={Colors.silver} textColor={Colors.springBud} _placeholder={{ color: Colors.silver }} focusBorderColor={Colors.springBud} />
             </InputGroup>
@@ -66,7 +66,7 @@ function FeedbackForm() {
           align='stretch'
           w="100%"
         >
-          <Text mb='5px'>Your name:</Text>
+          <Text mb='5px' textColor={Colors.silver}>Your name:</Text>
           <InputGroup size='md'>
             <Input placeholder='Your Name' value={name} onChange={e => setName(e.target.value)} borderColor={Colors.silver} textColor={Colors.springBud} _placeholder={{ color: Colors.silver }} focusBorderColor={Colors.springBud} />
           </InputGroup>
@@ -86,7 +86,7 @@ function FeedbackForm() {
           align='stretch'
           w="100%"
         >
-          <Text mb='5px'>Link to demo:</Text>
+          <Text mb='5px' textColor={Colors.silver}>Link to demo:</Text>
           <InputGroup size='md'>
             <Input placeholder='For example, a link to a private SoundCloud track' value={link} onChange={e => setLink(e.target.value)} borderColor={Colors.silver} textColor={Colors.springBud} _placeholder={{ color: Colors.silver }} focusBorderColor={Colors.springBud} />
           </InputGroup>
@@ -96,7 +96,7 @@ function FeedbackForm() {
           align='stretch'
           w="100%"
         >
-          <Text mb='5px'>Message:</Text>
+          <Text mb='5px' textColor={Colors.silver}>Message:</Text>
           <InputGroup size='md'>
             <Textarea resize="none" placeholder='Provide some information about what you want me to do' value={message} onChange={e => setMessage(e.target.value)} borderColor={Colors.silver} textColor={Colors.springBud} _placeholder={{ color: Colors.silver }} focusBorderColor={Colors.springBud} />
           </InputGroup>
