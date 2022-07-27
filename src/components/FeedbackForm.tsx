@@ -49,7 +49,7 @@ function FeedbackForm() {
 
   return (
     <Center h='100%' w="100%">
-      <VStack w="80%">
+      <VStack w="100%">
         <Tooltip label='I will use it to answer only'>
           <VStack
             align='stretch'
